@@ -14,8 +14,35 @@
     <main>
         <p>Enter the password to recieve your adventure</p>
         <p>
-        <label for="pwd">Password:</label>
-        <input type="password" id="pwd" name="pwd" value="HIIII">
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd" value="Wedding">
         </p>
+        <p>
+            <button onclick="checkPassword()">Submit</button>
+        </p>
+        <div id="error"></div>
+        <p><div id="hint"></div></p>
     </main>
 </body>
+
+<script>
+    var passwordList = ["06/06/26", "06/06/2026", "6/6/26", "6/6/2026", "June 6, 2026", "june 6, 2026"];
+    var passwordInput = document.getElementById("pwd");
+    var counter = 0;
+    function checkPassword() {
+        if (passwordList.includes(passwordInput.value)) {
+            alert("Welcome Secret Agent NapkinFiend! Press OK to recieve your instructions");
+            window.location.href = "Project Janae/page.html";
+        } else {
+            var errorElement = document.getElementById("error");
+            errorElement.textContent = "Incorrect password. Try again.";
+            counter++;
+            if (counter >= 3) {
+                var hintElement = document.getElementById("hint");
+                hintElement.textContent = "Hint: The password is an important date.";
+                counter = 0;
+            }
+        }
+    }
+    
+</script>
