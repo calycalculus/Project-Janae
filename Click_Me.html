@@ -13,31 +13,36 @@
     <header>
         <h1>Secrect Agency</h1>
     </header>
-    <div class="content">
-        <p>Enter the password to recieve your adventure</p>
+    <form class="content" action="submit">
+        <p>Enter your credentials</p>
+        <p>
+                <label for="uname">Username:</label>
+                <input type="text" id="uname" name="uname" placeholder="Agent..." required>
+        </p>
         <p>
                 <label for="pwd">Password:</label>
                 <input type="password" id="pwd" name="pwd" value="06/06/26">
         </p>
         <p>
-            <button onclick="checkPassword()">Submit</button>
+            <input type="submit" value="Submit" onclick="checkPassword()">
         </p>
-        <div id="error"></div>
+        <!-- <div id="error"></div> -->
         <p><div id="hint"></div></p>
-    </div>
+    </form>
     </main>
 </body>
 
 <script>
     var passwordList = ["06/06/26", "06/06/2026", "6/6/26", "6/6/2026", "June 6, 2026", "june 6, 2026", "June62026", "june62026", "06262026", "06262026"];
     var passwordInput = document.getElementById("pwd");
+    var usernameInput = document.getElementById("uname");
     var counter = 0;
     function checkPassword() {
-        if (passwordList.includes(passwordInput.value)) {
+        if (passwordList.includes(passwordInput.value) && usernameInput.value !== "") {
             window.location.href = "Project Janae/accept.html";
         } else {
-            var errorElement = document.getElementById("error");
-            errorElement.textContent = "Incorrect password. Try again.";
+            var hintElement = document.getElementById("hint");
+            hintElement.textContent = "Incorrect password. Try again.";
             counter++;
             if (counter >= 3) {
                 var hintElement = document.getElementById("hint");
