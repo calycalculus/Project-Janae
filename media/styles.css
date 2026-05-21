@@ -1,0 +1,55 @@
+@font-face {
+    font-family: UnicalAntiqua;
+    src: url(UncialAntiqua-Regular.ttf); 
+}
+
+@font-face {
+    font-family: SpecialElite;
+    src: url(Special_Elite/SpecialElite-Regular.ttf);
+}
+
+:root {
+    --bg-pattern--: linear-gradient(90deg, rgb(55,11,45) 0%, #580925 100%);
+    --burgundy--: #370B2D;
+}
+
+body {
+    background: var(--bg-pattern--);
+    background: linear-gradient(90deg, #580925 0%, rgb(55,11,45, 1)  100%);
+    margin: auto;
+    padding: auto;
+}
+
+
+header {
+    margin-left: 5%;
+    margin-right: 5%;
+    color: var(--burgundy--);
+    text-align: center;
+    padding: 2px;
+    /* background: rgb(18, 59, 51, 0.8); */
+    background-image: url("golg.jpg");
+    border-radius: 0px 30px 0px 30px;
+}
+
+header h1 {
+    font-family: SpecialElite;
+}
+
+main {
+    background-color: rgba(243, 241, 211, 0.8);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.content {
+    padding: 2rem;
+    font-family: SpecialElite;
+}
+
+#hint, #accept {
+    color: var(--burgundy--);
+    font-weight: bold;
+}
