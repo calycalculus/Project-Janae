@@ -12,20 +12,23 @@
     <header>
         <h1>Welcome Agent</h1>
     </header>
-    <p>Check the box to accept your mission</p>
-    <input type="checkbox" id="accept" name="accept" required>
-    <label for="accept">I accept the mission</label><br><br>
-    <div id="accept"></div>
-    <p>Press submit to review the details of the case</p>
-    <button onclick="checkAccept()">Submit</button>
+    <div class="content">
+        <p>Check the box to accept your mission</p>
+        <input type="checkbox" name="accept" id="check" required>
+        <label for="check">I accept the mission</label><br><br>
+        <div id="accept"></div>
+        <p>Press submit to review the details of the case</p>
+        <button onclick="checkAccept()">Submit</button>
+    </div>
     </main>
 </body>
+
 <script>
     function checkAccept() {
-        var acceptCheckbox = document.getElementById("accept");
+        var acceptCheckbox = document.getElementById("check");
         if (acceptCheckbox.checked) {
-            window.location.href = "Project Janae/mission.html";
-        } else {
+            window.location.href = "mission.html";
+        } else if (!acceptCheckbox.checked) {
             var acceptElement = document.getElementById("accept");
             acceptElement.textContent = "You must accept the mission to proceed.";
         }

@@ -11,24 +11,23 @@ body {
 
 
 header {
-    margin-top: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 0%;
     text-align: center;
-    /* padding: 2px; */
+    padding: 2px;
     background: #370B2D;
     background: var(--bg-pattern--);
-    z-index: 1;
-    position: relative;
-    display: flex;
-    width: 100%;
 }
 
 main {
     background-color: rgba(243, 241, 211, 0.8);
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 0%;
+}
+
+.content {
     padding: 2rem;
 }
