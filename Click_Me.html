@@ -8,10 +8,11 @@
     <link href="media/clue_fav.PNG" type="image/x-icon" rel="icon">
 </head>
 <body>
+    <main>
     <header>
         <h1>Secrect Agency</h1>
     </header>
-    <main>
+    
         <p>Enter the password to recieve your adventure</p>
         <p>
                 <label for="pwd">Password:</label>
@@ -31,7 +32,7 @@
     var counter = 0;
     function checkPassword() {
         if (passwordList.includes(passwordInput.value)) {
-            window.location.href = "Project Janae/mission.html";
+            window.location.href = "Project Janae/accept.html";
         } else {
             var errorElement = document.getElementById("error");
             errorElement.textContent = "Incorrect password. Try again.";

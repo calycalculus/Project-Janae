@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clue #1</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="media/clue_fav.PNG" type="image/x-icon" rel="icon">
+</head>
+<body>
+    <main>
+    <header>
+        <h1>Welcome Agent</h1>
+    </header>
+    <p>Check the box to accept your mission</p>
+    <input type="checkbox" id="accept" name="accept" required>
+    <label for="accept">I accept the mission</label><br><br>
+    <div id="accept"></div>
+    <p>Press submit to review the details of the case</p>
+    <button onclick="checkAccept()">Submit</button>
+    </main>
+</body>
+<script>
+    function checkAccept() {
+        var acceptCheckbox = document.getElementById("accept");
+        if (acceptCheckbox.checked) {
+            window.location.href = "Project Janae/mission.html";
+        } else {
+            var acceptElement = document.getElementById("accept");
+            acceptElement.textContent = "You must accept the mission to proceed.";
+        }
+    }
+</script>

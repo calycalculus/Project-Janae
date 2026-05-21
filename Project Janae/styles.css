@@ -15,7 +15,8 @@ header {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 0%;
-    padding: 2px;
+    text-align: center;
+    /* padding: 2px; */
     background: #370B2D;
     background: var(--bg-pattern--);
     z-index: 1;
