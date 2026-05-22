@@ -15,7 +15,9 @@
 
 body {
     background: var(--bg-pattern--);
-    background: linear-gradient(90deg, #580925 0%, rgb(55,11,45, 1)  100%);
+    background: url(enchant_forest.jpg), linear-gradient(90deg, #580925 0%, rgb(55,11,45, 1)  100%);
+    background-size: auto;
+    /* background-repeat: no-repeat; */
     margin: auto;
     padding: auto;
 }
