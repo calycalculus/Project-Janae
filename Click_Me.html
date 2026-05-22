@@ -34,20 +34,33 @@
 <script>
     var passwordList = ["06/06/26", "06/06/2026", "6/6/26", "6/6/2026", "June 6, 2026", "june 6, 2026", "June62026", "june62026", "06262026", "06262026"];
     var passwordInput = document.getElementById("pwd");
+    var usernameList = ["AgentNapkin", "NapkinFiend", "AgentNF", "Napkin", "agentnapkin", "agentnapkinfiend", "agent napkin fiend", "Agent Napkin Fiend", "Agent NapkinFiend", "Agent Napkinfiend", "Agent napkinfiend", "napkin", "fiend", "AgentFiend", "agentjanae"]
     var usernameInput = document.getElementById("uname");
     var counter = 0;
     function checkPassword() {
-        if (passwordList.includes(passwordInput.value) && usernameInput.value !== "") {
+        if (passwordList.includes(passwordInput.value) && usernameList.includes(usernameInput.value)) {
             window.location.href = "accept.html";
         } else {
             var hintElement = document.getElementById("hint");
-            hintElement.textContent = "Incorrect password. Try again.";
+            hintElement.textContent = "Incorrect login. Try again.";
             counter++;
             if (counter >= 3) {
                 var hintElement = document.getElementById("hint");
-                hintElement.textContent = "Hint: The password is an important date.";
+                hintElement.textContent = "Hint: The password is an important future date.";
                 counter = 0;
             }
+        }
+        if (passwordList.includes(passwordInput.value)) {
+            document.getElementById("pwd").style.borderColor = "green";
+        }
+        else {
+            document.getElementById("pwd").style.borderColor = "red";
+        }
+        if (usernameList.includes(usernameInput.value)) {
+            document.getElementById("uname").style.borderColor = "green";
+        }
+        else {
+            document.getElementById("uname").style.borderColor = "red";
         }
     }
     

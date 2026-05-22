@@ -1,11 +1,11 @@
 @font-face {
     font-family: UnicalAntiqua;
-    src: url(UncialAntiqua-Regular.ttf); 
+    src: url(Fonts/UncialAntiqua-Regular.ttf); 
 }
 
 @font-face {
     font-family: SpecialElite;
-    src: url(Special_Elite/SpecialElite-Regular.ttf);
+    src: url(Fonts/SpecialElite-Regular.ttf);
 }
 
 :root {
