@@ -12,12 +12,12 @@
         <br>
     <header>
         <img src="../media/sa-img.png" alt="Secret Agent Icon" class="icon" width="100" height="100">
-        <h1>Clue #2</h1>
+        <h1>Clue #5</h1>
     </header>
     <div class="content">
         <p>Well done Agent! Head to the next location and look for clues.</p>
         <p>
-            <input type="text" id="answer" name="answer" placeholder="Enter your answer here..." required>
+            <input type="text" class="answer" name="answer" placeholder="Enter your answer here..." required>
             <button onclick="checkAnswer()">Submit</button>
             <div id="hint"></div>
         </p>
@@ -25,13 +25,13 @@
 </body>
 
 <script>
-    var answerList = [];
-    var answerInput = document.getElementById("answer");
+    var answerList = ["testing", "Testing", "TESTING"];
+    var answerInput = document.getElementsByClassName("answer")[0];
     function checkAnswer() {
         if (answerList.includes(answerInput.value)) {
-            window.location.href = "clue3.html";
+            window.location.href = "????";
         } else {
-            document.getElementById("answer").style.borderColor = "red";
+            document.getElementsByClassName("answer")[0].style.borderColor = "red";
             var hintElement = document.getElementById("hint");
             hintElement.textContent = "Incorrect Answer. Try again.";
         }
