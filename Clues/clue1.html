@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Janae</title>
+    <link href="../media/styles.css" rel="stylesheet">
+    <link href="../media/clue_fav.PNG" type="image/x-icon" rel="icon">
+</head>
+<body>
+    <main>
+        <br>
+    <header>
+        <img src="../media/sa-img.png" alt="Secret Agent Icon" class="icon" width="100" height="100">
+        <h1>Clue #1</h1>
+    </header>
+    <div class="content">
+        <p>Welcome to your first clue, Agent NapkinFiend. This clue will lead you to the location of the mafia's hideout. Use your detective skills to decipher the clue and find the location of the hideout. Good luck, Agent.</p>
+        <p id="clue1">Clue: <br><br> "I bloom with beauty, lined in rows,<br>
+            A fragrant place where thorn and color grows. <br>
+            Lovers wander, bees take part— <br>
+            What place am I that steals the heart?"
+        </p>
+        <p>
+            <input type="text" id="answer" name="answer" placeholder="Enter your answer here..." required>
+            <button onclick="checkAnswer()">Submit</button>
+            <div id="hint"></div>
+        </p>
+    </div>
+    </main>
+</body>
+
+<script>
+    var answerInput = document.getElementById("answer");
+    var answerList = ["rose garden", "the rose garden", "rose gardens", "the rose gardens", "rosegarden", "the rosegarden", "rosegardens", "the rosegardens", "The Rose Garden", "The Rose Gardens", "Rose Garden", "Rose Gardens"];
+    function checkAnswer() {
+        if (answerInput.value.toLowerCase() === "to be determined") {
+            window.location.href = "clue2.html";
+        } else {
+            document.getElementById("answer").style.borderColor = "red";
+            var hintElement = document.getElementById("hint");
+            hintElement.textContent = "Incorrect Answer. Try again.";
+        }
+    }
+</script>
+

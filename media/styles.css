@@ -70,3 +70,24 @@ main {
     color: var(--burgundy--);
     font-weight: bold;
 }
+
+button {
+    background-color: rgba(55, 11, 45, 0.3);
+    border-radius: 10px;
+    color: white;
+    font-family: SpecialElite;
+}
+
+input {
+    background-color: rgba(55, 11, 45, 0.3);
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(18, 59, 51, 0.4);
+}
+
+/* #clue1 br {
+    display: block;
+    padding-bottom: 1.8rem;
+} */
