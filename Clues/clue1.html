@@ -15,7 +15,7 @@
         <h1>Clue #1</h1>
     </header>
     <div class="content">
-        <p>Welcome to your first clue, Agent NapkinFiend. This rhyme was left at the most recent crime scene. Use your superior detective skills to help locate the location of the next target. Good luck, Agent.</p>
+        <p>Welcome to your first clue, Agent NapkinFiend. <br>This rhyme was left at the most recent crime scene. Use your superior detective skills to help locate the location of the next target. Good luck, Agent.</p>
         <p id="clue1">Clue: <br><br> "I bloom with beauty, lined in rows,<br>
             A fragrant place where thorn and color grows. <br>
             Lovers wander, bees take part— <br>
@@ -31,10 +31,10 @@
 </body>
 
 <script>
-    var answerInput = document.getElementById("answer");
     var answerList = ["rose garden", "the rose garden", "rose gardens", "the rose gardens", "rosegarden", "the rosegarden", "rosegardens", "the rosegardens", "The Rose Garden", "The Rose Gardens", "Rose Garden", "Rose Gardens"];
+    var answerInput = document.getElementById("answer");
     function checkAnswer() {
-        if (answerInput.value.toLowerCase() === "to be determined") {
+        if (answerList.includes(answerInput.value)) {
             window.location.href = "clue2.html";
         } else {
             document.getElementById("answer").style.borderColor = "red";
