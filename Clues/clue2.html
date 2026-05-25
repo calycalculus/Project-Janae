@@ -15,7 +15,7 @@
         <h1>Clue #2</h1>
     </header>
     <div class="content">
-        <p>Well done Agent! Head to the next location and look for clues.</p>
+        <p>Looks like yet another misuse of the laser technology. Look for any clues and enter your findings below.</p>
         <p>
             <input type="text" id="answer" name="answer" placeholder="Enter your answer here..." required>
             <button onclick="checkAnswer()">Submit</button>
@@ -26,7 +26,7 @@
 </body>
 
 <script>
-    var answerList = [];
+    var answerList = ["123"];
     var answerInput = document.getElementById("answer");
     function checkAnswer() {
         if (answerList.includes(answerInput.value)) {
