@@ -15,9 +15,11 @@
         <h1>Clue #2</h1>
     </header>
     <div class="content">
-        <p>Looks like yet another misuse of the laser technology. Look for any clues and enter your findings below.</p>
+        <p>Good job on decoding that riddle. We knew you'd be the right team for the job.<br>
+        In addition we believe we can gather some evidence from the site. Look for any clues and report back.
+        </p>
         <p>
-            <input type="text" id="answer" name="answer" placeholder="Enter your answer here..." required>
+            <input type="text" id="answer" name="answer" placeholder="Enter location" required>
             <button onclick="checkAnswer()">Submit</button>
             <div id="hint"></div>
         </p>
@@ -26,7 +28,7 @@
 </body>
 
 <script>
-    var answerList = ["123"];
+    var answerList = ["The Zoo", "the zoo", "Zoo", "zoo"];
     var answerInput = document.getElementById("answer");
     function checkAnswer() {
         if (answerList.includes(answerInput.value)) {

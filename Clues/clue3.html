@@ -15,7 +15,9 @@
         <h1>Clue #3</h1>
     </header>
     <div class="content">
-        <p>We just barely missed them. Head to the next location to catch them in the act.</p>
+        <p>Good news, agent! We believe that the Mafia leader may have a weakness. These 'love poems' seem to suggest he has a lover or one he cares deeply for. Perhaps someone he's leaving clues for. If we can find this person, we may still be able to bargain with the Mafia boss.</p>
+        <p>Keep following the clues and report each finding.</p>
+        <p>We'll keep track of the locations and keep you updated on any connections we find.</p>
         <p>
             <input type="text" class="answer" name="answer" placeholder="Enter your answer here..." required>
             <button onclick="checkAnswer()">Submit</button>
@@ -25,7 +27,7 @@
 </body>
 
 <script>
-    var answer2List = ["testing", "Testing", "TESTING"];
+    var answer2List = ["The Library", "the library", "Library", "library", "Boise Public Library", "boise public library", "Boise public library", "Boise Public library", "boise Public Library"];
     var answer2Input = document.getElementsByClassName("answer")[0];
     function checkAnswer() {
         if (answer2List.includes(answer2Input.value)) {
