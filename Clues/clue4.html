@@ -15,7 +15,7 @@
         <h1>Clue #4</h1>
     </header>
     <div class="content">
-        <p>The Mafia boss must know we are after him and his crew. We need to pick up the speed. Enter your findings and head to the next crime scene.</p>
+        <p>Interestingly, the Mafia seems to be leading you in a circle. We believe you are close to catching up. Keep up the good work, and as always, record the location below.</p>
         <p>
             <input type="text" class="answer" name="answer" placeholder="Enter your answer here..." required>
             <button onclick="checkAnswer()">Submit</button>
@@ -25,7 +25,7 @@
 </body>
 
 <script>
-    var answerList = ["testing", "Testing", "TESTING"];
+    var answerList = ["The Art Museum", "the art museum", "Art Museum", "art museum", "Boise Art Museum", "boise art museum", "Boise art museum", "Boise Art museum", "boise Art Museum"];
     var answerInput = document.getElementsByClassName("answer")[0];
     function checkAnswer() {
         if (answerList.includes(answerInput.value)) {

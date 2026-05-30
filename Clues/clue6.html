@@ -12,13 +12,15 @@
         <br>
     <header>
         <img src="../media/sa-img.png" alt="Secret Agent Icon" class="icon" width="100" height="100">
-        <h1>Clue #5</h1>
+        <h1>Clue #6</h1>
     </header>
     <div class="content">
-        <p>The Mafia leader is definitely leading someone here. We have our suspicions that it is one of our agents he is attempting to lure. 
-            Already, we've received news that Agent 6 has changed sides.<br>
-            Stay aware at all times and do not let your guard down.
-            And <strong>DO NOT</strong> talk to anyone that is not one of us.</p>
+        <p>Once you reach the final location, prepare for a firefight. We do not know how many members of the Mafia will be present. Our scientists have sent the remaining set of lasers to your location.
+            Find the Mafia leader and Agent 6 and <em>kill them</em>.
+            If you don't, another agent will.
+            And Agent Napkin, one more thing.
+            No matter what you hear, what you see, or what you are told,<strong>DO NOT ACCEPT</strong>.
+            We repeat.<strong> DO NOT ACCEPT!</strong></p>
         <p>
             <input type="text" class="answer" name="answer" placeholder="Enter location..." required>
             <button onclick="checkAnswer()">Submit</button>
@@ -28,11 +30,11 @@
 </body>
 
 <script>
-    var answerList = ["The Red Bridge", "the red bridge", "Red Bridge", "red bridge", "redbridge", "Redbridge", "The Redbridge", "the Redbridge"];
+    var answerList = ["The Art Museum", "the art museum", "Art Museum", "art museum", "Boise Art Museum", "boise art museum", "Boise art museum", "Boise Art museum", "boise Art Museum"];
     var answerInput = document.getElementsByClassName("answer")[0];
     function checkAnswer() {
         if (answerList.includes(answerInput.value)) {
-            window.location.href = "clue6.html";
+            window.location.href = "finale.html";
         } else {
             document.getElementsByClassName("answer")[0].style.borderColor = "red";
             var hintElement = document.getElementById("hint");
