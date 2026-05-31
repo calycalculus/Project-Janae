@@ -15,30 +15,39 @@
         <h1>Clue #6</h1>
     </header>
     <div class="content">
-        <p>Once you reach the final location, prepare for a firefight. We do not know how many members of the Mafia will be present. Our scientists have sent the remaining set of lasers to your location.
-            Find the Mafia leader and Agent 6 and <em>kill them</em>.
-            If you don't, another agent will.
-            And Agent Napkin, one more thing.
-            No matter what you hear, what you see, or what you are told,<strong>DO NOT ACCEPT</strong>.
-            We repeat.<strong> DO NOT ACCEPT!</strong></p>
+        <p>Once you reach the final location, prepare for a firefight. We do not know how many members of the Mafia will be present.<br>
+            Our scientists have sent the remaining set of lasers to your location.<br>
+        </p>
+        <p>Find the Mafia leader and <em>kill him</em>. <br>
+            If you don't, another agent will. <br>
+            And Agent Napkin, one more thing:<br>
+            No matter what you hear, what you see, or what you are told,<strong> DO NOT ACCEPT</strong>.
+            We repeat. <strong> DO NOT ACCEPT!</strong></p>
         <p>
-            <input type="text" class="answer" name="answer" placeholder="Enter location..." required>
-            <button onclick="checkAnswer()">Submit</button>
-            <div id="hint"></div>
+            Are Loyal to the Agency?
+            <br>
+            <div class="answer">
+                <div>
+                    <input type="radio" id="yes" name="loyalty" required>
+                    <label for="yes">Yes</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="no" name="loyalty" required>
+                    <label for="no">No</label><br>
+                </div>
+                <button onclick="checkAnswer()">Submit</button>
+            </div>
         </p>
     </main>
 </body>
 
 <script>
-    var answerList = ["The Art Museum", "the art museum", "Art Museum", "art museum", "Boise Art Museum", "boise art museum", "Boise art museum", "Boise Art museum", "boise Art Museum"];
     var answerInput = document.getElementsByClassName("answer")[0];
     function checkAnswer() {
-        if (answerList.includes(answerInput.value)) {
+        if (answerInput = document.getElementById("yes").checked) {
             window.location.href = "finale.html";
-        } else {
-            document.getElementsByClassName("answer")[0].style.borderColor = "red";
-            var hintElement = document.getElementById("hint");
-            hintElement.textContent = "Incorrect Answer. Try again.";
+        } else if (answerInput = document.getElementById("no").checked) {
+            window.location.href = "warning.html";
         }
     }
 </script>
