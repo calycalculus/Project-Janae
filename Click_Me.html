@@ -18,11 +18,11 @@
         <p>Enter your credentials</p>
         <p>
                 <label for="uname">Username:</label>
-                <input type="text" id="uname" name="uname" placeholder="Agent..." value="Agent NapkinFiend" required>
+                <input type="text" id="uname" name="uname" placeholder="Agent..." required>
         </p>
         <p>
                 <label for="pwd">Password:</label>
-                <input type="password" id="pwd" name="pwd" value="06/06/26">
+                <input type="password" id="pwd" name="pwd">
         </p>
         <p>
             <button onclick="checkPassword()">Submit</button>
@@ -33,9 +33,9 @@
 </body>
 
 <script>
-    var passwordList = ["06/06/26", "06/06/2026", "6/6/26", "6/6/2026", "June 6, 2026", "june 6, 2026", "June62026", "june62026", "06262026", "06262026"];
+    var passwordList = ["06/06/26", "06/06/2026", "6/6/26", "6/6/2026", "June 6, 2026", "june 6, 2026", "June62026", "june62026", "06062026", "06062026"];
     var passwordInput = document.getElementById("pwd");
-    var usernameList = ["AgentNapkin", "NapkinFiend", "AgentNF", "Napkin", "agentnapkin", "agentnapkinfiend", "agent napkin fiend", "Agent Napkin Fiend", "Agent NapkinFiend", "Agent Napkinfiend", "Agent napkinfiend", "napkin", "fiend", "AgentFiend", "agentjanae"]
+    var usernameList = ["AgentNapkin", "NapkinFiend", "AgentNF", "Napkin", "agentnapkin", "agentnapkinfiend", "agent napkin fiend", "Agent Napkin Fiend", "Agent NapkinFiend", "Agent Napkinfiend", "Agent napkinfiend", "napkin", "fiend", "AgentFiend", "agentjanae", "Agent Napkin", "agent napkin", "Agent Napkin", "napkin Agent", "Napkin Agent"];
     var usernameInput = document.getElementById("uname");
     var counter = 0;
     function checkPassword() {
