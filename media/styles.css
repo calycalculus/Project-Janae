@@ -72,16 +72,32 @@ main {
     font-weight: bold;
 }
 
+#begin {
+    background-color: rgba(55, 11, 45, 0.3);
+    border-radius: 10px;
+    color: white;
+    font-family: SpecialElite;
+    width: 150px;
+    height: 50px;
+    font-size: medium;
+}
+
 button {
     background-color: rgba(55, 11, 45, 0.3);
     border-radius: 10px;
     color: white;
     font-family: SpecialElite;
+    width: 100px;
+    height: 25px;
+    font-size: medium;
 }
 
 input {
     background-color: rgba(55, 11, 45, 0.3);
     color: white;
+    width: 150px;
+    height: 25px;
+    font-size: medium;
 }
 
 button:hover {
