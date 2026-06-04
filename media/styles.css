@@ -110,6 +110,7 @@ input:not([type="checkbox"]) {
     display: flex;
     align-items: center;
     gap: 8px;
+    border: solid red 8px;
 }
 
 button:hover {
