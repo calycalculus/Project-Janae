@@ -92,7 +92,7 @@ button {
     font-size: medium;
 }
 
-input {
+input:not([type="checkbox"]) {
     background-color: rgba(55, 11, 45, 0.3);
     color: white;
     width: 150px;
@@ -103,7 +103,13 @@ input {
 #check {
     width: 20px;
     height: 20px;
-    padding: 0px;
+    margin: 0px;
+}
+
+.accept_mission {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 button:hover {
