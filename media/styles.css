@@ -100,11 +100,20 @@ input {
     font-size: medium;
 }
 
+#check {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+}
+
 button:hover {
     background-color: rgba(18, 59, 51, 0.4);
 }
 
-/* #clue1 br {
-    display: block;
-    padding-bottom: 1.8rem;
-} */
+#check:checked {
+    background-color: rgba(18, 59, 51, 0.4);
+}
+
+label {
+    display: inline;
+}
